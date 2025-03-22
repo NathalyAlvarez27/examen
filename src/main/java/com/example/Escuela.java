@@ -10,12 +10,18 @@ public class Escuela {
         this.estudiantes = new ArrayList<>();
     }
 
-    
+    public List<Estudiante> getEstudiantes() {
+        return estudiantes;
+    }
+
     public void agregarEstudiante(Estudiante estudiante) {
         estudiantes.add(estudiante);
     }
 
-    public List<Estudiante> getEstudiantes() {
-        return estudiantes;
+    public void mostrarEstudiantes() {
+        for (Estudiante estudiante : estudiantes) {
+            System.out.println(estudiante);
+        }
     }
+
 }
